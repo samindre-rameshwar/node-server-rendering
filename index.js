@@ -13,6 +13,6 @@ app.use(express.static(path.join(__dirname,'/public')));
 app.get('/',function(req,res){
      res.sendFile('index.htm',{root:path.join(__dirname,'/')});
 });
-app.listen(8181,function(){
-	console.log('listening on 8181')
+app.listen(process.env.PORT,function(){
+	console.log('listening ')
 });
