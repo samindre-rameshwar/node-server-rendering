@@ -1,11 +1,18 @@
-var http = require('http');
-var fs = require('fs');
+let express = require('express');
+let bodyParser = require('body-parser');
+let cors = require('cors');
+let path = require('path');
+let app = express();
+
+app.use(cors());
+app.use(bodyParser.json());
+
+app.use(express.static(path.join(__dirname,'/public')));
 
 
-http.createServer(function(req,res){
-	fs.readFile("index.html", function(err, data){
-  response.writeHead(200, {'Content-Type': 'text/html'});
-  response.write(data);
-  response.end();
+app.get('/',function(req,res){
+     res.sendFile('index.htm',{root:path.join(__dirname,'/')});
 });
-}).listen(process.env.PORT)
+app.listen(8181,function(){
+	console.log('listening on 8181')
+});
