@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "The sample portfolio by rameshwar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samindre-rameshwar/portfolio.git"
+  },
+  "keywords": [
+    "protfolio",
+    "cv",
+    "resume"
+  ],
+  "author": "Rameshwar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samindre-rameshwar/portfolio/issues"
+  },
+  "homepage": "https://github.com/samindre-rameshwar/portfolio#readme"
+}
